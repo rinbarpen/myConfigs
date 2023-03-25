@@ -1,7 +1,10 @@
 #!/usr/bin/bash
 
 # 配置neovim
-NEOVIM_SITE="https://github.com/rinbarpen/myNvimConfig.git"
 NEOVIM_CONF_FILE="init.vim"
-mkdir ~/.config/nvim
-git clone --single-branch $NEOVIM_SITE ~/.config/nvim/
+if [ ! -d "~/.config/nvim" ]; then
+  mkdir ~/.config/nvim
+  echo "Creating nvim directory"
+fi
+mv NEOVIM_CONF_FILE ~/.config/nvim/
+echo "Nvim configuration sets successfully"
