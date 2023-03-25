@@ -6,5 +6,9 @@ if [ ! -d "~/.config/nvim" ]; then
   mkdir ~/.config/nvim
   echo "Creating nvim directory"
 fi
-mv NEOVIM_CONF_FILE ~/.config/nvim/
-echo "Nvim configuration sets successfully"
+mv $NEOVIM_CONF_FILE ~/.config/nvim/
+if [ -f "~/.config/nvim/init.vim" ]; then
+  echo "Nvim configuration sets successfully"
+else
+  echo "Nvim configuration failed"
+fi
