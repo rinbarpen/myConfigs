@@ -13,6 +13,7 @@ sudo apt install neovim
 sudo apt install tree
 sudo apt install atop
 sudo apt install gcc
+sudo apt install g++
 sudo apt install clang
 sudo apt install clangd
 sudo apt install clang-format
