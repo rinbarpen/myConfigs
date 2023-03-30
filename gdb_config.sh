@@ -1,4 +1,4 @@
-#!usr/bin/bash
+#!/usr/bin/bash
 
 # 配置gdb
 GDB_CONF_FILE=".gdbinit"

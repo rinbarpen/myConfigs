@@ -20,7 +20,8 @@ sudo apt install clang-tidy
 sudo apt install gdb
 sudo apt install python3
 sudo apt install cmake
-sudo apt install code
+sudo apt install valgrind
+sudo apt install ffmpeg
 
 # 配置neovim
 sh ./neovim_config.sh

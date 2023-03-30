@@ -1,4 +1,4 @@
-#!usr/bin/bash
+#!/usr/bin/bash
 
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 echo "clone oh-my-zsh"
