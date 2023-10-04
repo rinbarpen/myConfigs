@@ -1,28 +1,35 @@
-#!/bin/bash
+#!/usr/bin/bash
 
-sudo apt install git
+sudo apt install -s git
 
 sudo apt update
-sudo apt install zsh
-sudo apt install tmux
-sudo apt install git
-sudo apt install ranger
-sudo apt install wget
-sudo apt install curl
-sudo apt install neovim
-sudo apt install tree
-sudo apt install atop
-sudo apt install gcc
-sudo apt install g++
-sudo apt install clang
-sudo apt install clangd
-sudo apt install clang-format
-sudo apt install clang-tidy
-sudo apt install gdb
-sudo apt install python3
-sudo apt install cmake
-sudo apt install valgrind
-sudo apt install ffmpeg
+sudo apt install -s zsh
+sudo apt install -s tmux
+sudo apt install -s git
+sudo apt install -s ranger
+sudo apt install -s wget
+sudo apt install -s curl
+sudo apt install -s neovim
+sudo apt install -s tree
+sudo apt install -s atop
+sudo apt install -s gcc
+sudo apt install -s g++
+sudo apt install -s clang
+sudo apt install -s clangd
+sudo apt install -s clang-format
+sudo apt install -s clang-tidy
+sudo apt install -s gdb
+sudo apt install -s python3
+sudo apt install -s cmake
+sudo apt install -s make
+sudo apt install -s valgrind
+sudo apt install -s ffmpeg
+sudo apt install -s openssh-server
+
+# start ssh server
+service sshd start
+# 开机自动启动ssh命令
+sudo systemctl enable ssh
 
 # 配置neovim
 sh ./neovim_config.sh
@@ -30,3 +37,8 @@ sh ./neovim_config.sh
 sh ./gdb_config.sh
 # 配置zsh
 sh ./zsh_config.sh
+# 
+sh ./3rdparty.sh
+# tools
+sh ./tools.sh
+
