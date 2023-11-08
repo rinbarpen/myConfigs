@@ -1,0 +1,17 @@
+zsh       # zsh
+tmux      # 分屏
+git       # 代码管理
+ranger    # 文件系统管理
+wget      # 网络get
+curl      # 网络爬取
+neovim    # nvim
+tree      # 文件树
+atop      # top加强版
+gcc          # gcc
+clang        # clang
+clang-format # 代码格式管理
+clang-tidy   #
+gdb          #
+python       # python
+cmake        # cmake
+code         # vscode
